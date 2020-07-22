@@ -1,4 +1,4 @@
-This is a fork of Driftini/LunarRabbit to add features that everyone except Driftini likes
+This is a fork of Driftini/LunarRabbit to add features that everyone except Driftini likes. It also implements Domenic's backend
 
 # LunarStore
 **LunarStore** (based on **LunarRabbit**) is an easy-to-use graphical frontend for Windows93 appstores and package managers.

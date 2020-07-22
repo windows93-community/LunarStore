@@ -1,5 +1,7 @@
-# LunarRabbit
-**LunarRabbit** (aka **Lunar**) is an easy-to-use graphical frontend for Windows93 appstores and package managers.
+This is a fork of Driftini/LunarRabbit to add features that everyone except Driftini likes
+
+# LunarStore
+**LunarStore** (based on **LunarRabbit**) is an easy-to-use graphical frontend for Windows93 appstores and package managers.
 
 ## Installation
 Given the very early phase in development, Lunar doesn't benefit from a proper installer yet. Installation has to be done manually for the time being but don't that scare you: it should take less than 5 minutes.

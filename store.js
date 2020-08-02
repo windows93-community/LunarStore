@@ -47,7 +47,7 @@ const Lunar = {
         document.getElementById("refreshbutton").disabled = true
         // fetch shit
         
-        appArray = [
+        /* appArray = [
             {
                 name: "Test App",
                 icon: "https://www.windows93.net/c/sys/skins/w93/floppy.png",
@@ -58,9 +58,20 @@ const Lunar = {
                 ver: "1.2",
                 script: ""
             }
-        ]
+        ] */
         
-        Lunar.refreshDone()
+        
+        appArray = []
+fetch('http://87.149.242.169:3000/api/db')
+  .then(response => response.json())
+  .then(function(data){
+
+for(i in data){
+appArray.push(data[i])
+}
+  Lunar.refreshDone()
+})
+        
     },
     refreshDone: () => {
         appArray.forEach(Lunar.appendApp)
@@ -113,8 +124,19 @@ const Lunar = {
         appendedAuth.innerText = value.auth
         appendedAuth.classList = ["auth"]
         
+        // yahoo
+        
+        appended.onclick = function(e){
+          
+          document.getElementById("view_name").innerHTML = (e.currentTarget.children[0].children[1].children[0].innerHTML);
+          
+          
+        }
+    
         Lunar.appList.appendChild(appended)
-
+        
+		// the end
+        
         appended.appendChild(appendedLeft)
         appendedLeft.appendChild(appendedIcon)
         appendedLeft.appendChild(appendedNameVer)
